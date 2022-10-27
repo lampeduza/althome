@@ -1,0 +1,15 @@
+.social {
+	@include reset-list;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 395px;
+	user-select: none;
+}
+
+.social__item {
+	margin-right: 73px;
+
+	&:nth-child(4n) {
+		margin-right: 0;
+	}
+}

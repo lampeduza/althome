@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Let's Speak 'Language school'">
+    <title>Alt Home | Main</title>
+    <link rel="preload" href="fonts/montserrat/300.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat/500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat/700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+
+  <header class="header">
+    <div class="header__wrapper container">
+    <nav class="header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="#">Место</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Каталог</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Оставить заявку</a></li>
+      </ul>
+    </nav>
+
+    <a class="header__logo logo" href="index.html">
+      <svg class="logo__icon" width="97" height="30" role="img" aria-label="Alt home logo">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+    </a>
+
+    <form class="header__form" action="url" method="get">
+      <label class="visually-hidden" for="search-field">Поиск по странице</label>
+      <input class="header__field" type="text" name="search-field" id="search-field">
+      <button class="header__search" type="button" aria-label="Искать по сайту">
+        <svg class="header__search-icon" width="16" height="16" role="img" aria-label="Search logo icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <p class="header__variants"><a class="header__link" href="#">Вход</a> или <a class="header__link" href="#">регистрация</a></p>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="promo">
+      <div class="promo__wrapper container">
+      <div class="promo__content">
+        <span class="promo__city">Санкт-Петербург</span>
+      <h1 class="promo__title">Загородные дома в аренду</h1>
+      <p class="promo__text">Отдохните от суеты мегаполиса в уютном тёплом доме в&nbsp;окружении экологически чистых лесов, рек и озёр</p>
+      <a class="promo__rent" href="#rent.html">Арендовать дом</a>
+
+      <ul class="promo__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="44" height="45" role="img" aria-label="Facebook icon">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="44" height="44" role="img" aria-label="Intagram icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="44" height="44" role="img" aria-label="Vk icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      </div>
+
+      <ul class="promo__slides">
+        <li class="promo__slide">
+          <picture class="promo__picture">
+            <img class="promo__image" src="img/desktop/slide.jpg" width="795" height="496" alt="Дом для отдыха на пустой местности с постриженным газоном">
+          </picture>
+        </li>
+        <li class="promo__slide">
+          <picture class="promo__picture">
+            <img class="promo__image" src="img/desktop/slide.jpg" width="795" height="496" alt="Дом для отдыха на пустой местности с постриженным газоном">
+          </picture>
+        </li>
+      </ul>
+
+      <ul class="promo__controls">
+        <li class="promo__control promo__control--previous">
+          <button class="promo__button" type="button">
+            <svg width="32" height="18" role="img" aria-label="Previous slide">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="promo__control promo__control--next">
+          <button class="promo__button" type="button">
+            <svg width="32" height="18" role="img" aria-label="Next slide">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+
+      <p class="promo__counter">
+        <span class="promo__digit promo__digit--of">1</span>/<span class="promo__digit promo__digit--length">8</span>
+      </p>
+      </div>
+    </section>
+
+    <article class="article">
+      <h2><span>01</span> Место</h2>
+      <h3>Парк отдыха на берегу Ладожского озера</h3>
+      <p class="article__decorate">Место <span class="article__transform">01</span></p>
+
+      <p class="article__text article__text--first">Отдохните в уютных деревянных домах с камином, сауной и джакузи, расположенных на берегу озера. Для любителей полного уединения есть домики и в глубине парка, в окружении вековых деревьев.</p>
+
+      <picture class="article__picture article__picture--first">
+        <img class="article__image" src="" width="444" height="280" alt="Укрытый снегом дом">
+      </picture>
+
+      <p class="article__text article__text--second">На территории парка есть баскетбольная площадка, собственный пляж с сеткой для волейбола, прокат горных велосипедов и лодок. А зимой у нас можно взять в прокат лыжи или снегоходы и кататься по специально оборудованным трассам. Для каждого посетителя составляем индивидуальную программу развлечений и помогаем её осуществить.</p>
+
+      <picture class="article__picture article__picture--second">
+        <img class="article__image" src="" width="1146" height="280" alt="Укрытый снегом дом">
+      </picture>
+
+      <p class="article__text article__text--third">Около каждого коттеджа есть детская площадка с качелями и горками, а на территории парка работает детская комната. Вы сможете позволить себе любой отдых зная, что ваш ребёнок находится под присмотром опытных специалистов.</p>
+
+      <blockquote class="article__offer">Мы предлагаем не только уютные дома, большой выбор развлечений и активностей для вас и вашей семьи, но и масштабные праздники, спортивные турниры и возможность встретить новых друзей.</blockquote>
+
+      <p class="article__text article__text--fourth">Несмотря на отдалённость от населённых пунктов, вы не будете чувствовать себя оторванными от цивилизации. Все наши дома оборудованы высокоскоростными точками доступа Wi-Fi и домашними кинотеатрами с подпиской Netflix.</p>
+
+      <p class="article__text article__text--fifth">Приезжайте к нам на месяц, всё лето или зиму — на длительную аренду действуют хорошие скидки! Забронируйте дом прямо сейчас, для этого достаточно заказать звонок, а отменить бронь вы сможете в любое время совершенно бесплатно.</p>
+
+      <p class="article__tip article__tip--first">За счёт особой конструкции в наших домах очень тепло зимой и прохладно летом. Мы открыты для вас в любое время года!</p>
+      <p class="article__tip article__tip--second">Вы можете подписаться на рассылку и узнавать обо всех акциях, скидках, и выгодных предложениях.</p>
+
+      <a class="article__link" href="#">Бесплатно забронировать</a>
+    </article>
+
+    <section class="rent">
+      <h2><span>02</span> Каталог</h2>
+      <h3>Парк отдыха на берегу Ладожского озера</h3>
+
+      <div class="rent__cards">
+        <article class="rent__card">
+          <picture class="rent__picture">
+            <img class="rent__image" src="" width="328" height="220" alt="Современный классический дом">
+          </picture>
+
+          <h4 class="rent__card-title">Современная классика</h4>
+          <p class="rent__square">Площадь &mdash; 186 м2</p>
+          <ul class="rent__list">
+            <li class="rent__item">5 комнат</li>
+            <li class="rent__item">3 спальни</li>
+            <li class="rent__item">2 этажа</li>
+          </ul>
+        </article>
+        <article class="rent__card">
+          <picture class="rent__picture">
+            <img class="rent__image" src="" width="328" height="220" alt="Дом с чудесным видом на озеро">
+          </picture>
+
+          <h4 class="rent__card-title">Дом на берегу озера</h4>
+          <p class="rent__square">Площадь &mdash; 242 м2</p>
+          <ul class="rent__list">
+            <li class="rent__item">7 комнат</li>
+            <li class="rent__item">4 спальни</li>
+            <li class="rent__item">2 этажа</li>
+          </ul>
+        </article>
+        <article class="rent__card">
+          <picture class="rent__picture">
+            <img class="rent__image" src="" width="328" height="220" alt="Большой дом окруженный лесом">
+          </picture>
+
+          <h4 class="rent__card-title">Особняк в лесу</h4>
+          <p class="rent__square">Площадь &mdash; 406 м2</p>
+          <ul class="rent__list">
+            <li class="rent__item">12 комнат</li>
+            <li class="rent__item">8 спален</li>
+            <li class="rent__item">2 этажа</li>
+          </ul>
+        </article>
+        <article class="rent__card">
+          <picture class="rent__picture">
+            <img class="rent__image" src="" width="328" height="220" alt="Уютный домик на дереве">
+          </picture>
+
+          <h4 class="rent__card-title">Домик на дереве</h4>
+          <p class="rent__square">Площадь &mdash; 75 м2</p>
+          <ul class="rent__list">
+            <li class="rent__item">3 комнаты</li>
+            <li class="rent__item">2 спальни</li>
+            <li class="rent__item">1 этаж</li>
+          </ul>
+        </article>
+        <article class="rent__card rent__card--hit">
+          <picture class="rent__picture">
+            <img class="rent__image" src="" width="328" height="220" alt="Речной дом">
+          </picture>
+
+          <h4 class="rent__card-title">Домик на дереве</h4>
+          <p class="rent__square">Площадь &mdash; 81 м2</p>
+          <ul class="rent__list">
+            <li class="rent__item">3 комнаты</li>
+            <li class="rent__item">2 спальни</li>
+            <li class="rent__item">1 этаж</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="feedback__content">
+        <h2><span>03</span> Оставить заявку</h2>
+        <h3>Мы свяжемся с вами</h3>
+
+        <form class="feedback__form" action="url" method="post">
+          <fieldset class="feedback__fieldset fields">
+            <legend class="visually-hidden">Заполните поля формы</legend>
+
+            <ul class="fields__list">
+              <li class="fields__item">
+                
+              </li>
+              <li class="fields__item">
+                <label for="firstname-field">Имя</label>
+                <input type="text" name="firstname-field" id="firstname-field" placehodler="Джон">
+              </li>
+              <li class="fields__item">
+                <label for="secondname-field">Фамилия</label>
+                <input type="text" name="secondname-field" id="secondname-field" placehodler="Смит">
+              </li>
+              <li class="fields__item">
+                <label for="email-field">E-mail</label>
+                <input type="text" name="email-field" id="email-field" placehodler="johnsmith@gmail.com">
+              </li>
+              <li class="fields__item">
+                <label for="phone-number-field">Телефон</label>
+                <input type="text" name="phone-number-field" id="phone-number-field" placehodler="+7 999 999-99-99">
+              </li>
+            </ul>
+
+            <p class="fields__agreement">
+              <label for="agreement-field">Согласие на обработку персональных данных</label>
+              <input class="visually-hidden" type="checkbox" name="agreement-field" id="agreement-field">
+            </p>
+            <p class="fields__subscription">
+              <label for="subscription-field">Подписка на рассылку</label>
+              <input class="visually-hidden" type="checkbox" name="subscription-field" id="subscription-field" checked>
+            </p>
+          </fieldset>
+
+          <button class="fields__send" type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <picture class="feedback__picture">
+        <img class="feedback__image" src="" width="678" height="737" alt="Лодка в центре озера">
+      </picture>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="footer__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="#">Место</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Каталог</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Оставить заявку</a></li>
+      </ul>
+    </nav>
+
+    <a class="logo" href="index.html">
+      <svg class="logo__icon" width="97" height="30" role="img" aria-label="Alt home logo">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+    </a>
+  </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
