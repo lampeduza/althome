@@ -1,0 +1,155 @@
+.rent {
+	background-color: #F2F8FB;
+}
+
+.rent__wrapper {
+	padding: 100px 30px 140px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+
+	h2,
+	h3 {
+		margin: 0;
+		text-align: center;
+	}
+
+	h2 {
+		color: #06A9B3;
+		font-weight: 400;
+		font-size: inherit;
+		line-height: inherit;
+		display: grid;
+		grid-template-columns: min-content 84px min-content;
+		grid-template-rows: 20px;
+		column-gap: 8px;
+		margin-bottom: 60px;
+		justify-self: center;
+		text-align: center;
+
+		grid-column: 6 / 8;
+
+		&::after {
+			content: '';
+			width: 84px;
+			height: 1px;
+			background-color: #06a9b3;
+			grid-column: 2 / 3;
+			position: relative;
+			top: -10px;
+		}
+
+		span {
+			grid-column: 3 / 4;
+		}
+
+		.rent__line {
+			grid-column: 1 / 2;
+		}
+	}
+
+	h3 {
+		color: #333333;
+		font-size: 32px;
+		line-height: 48px;
+		margin-bottom: 40px;
+
+		grid-column: 5 / 9;
+	}
+}
+
+.rent__cards {
+	grid-column: 1 / -1;
+
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 24px;
+}
+
+.rent__card {
+	color: #333333;
+	user-select: none;
+	background-color: #ffffff;
+
+	&:first-child {
+		grid-column: 1 / 4;
+	}
+
+	&:nth-child(2) {
+		grid-column: 4 / 7;
+	}
+
+	&:nth-child(3) {
+		grid-column: 7 / 10;
+	}
+
+	&:nth-child(4) {
+		grid-column: 10 / -1;
+	}
+
+	&--hit {
+		grid-column: 3 / -3;
+		display: grid;
+		grid-template-columns: 327px auto;
+		grid-template-rows: auto;
+		gap: 24px;
+
+		.rent__picture {
+			grid-column: 1 / 2;
+			grid-row: 1 / -1;
+		}
+
+		.rent__content {
+			padding: 20px 24px 0 0;
+		}
+
+		.rent__item {
+			justify-self: start;
+
+			&:nth-child(2) {
+				justify-self: center;
+			}
+
+			&:last-child {
+				justify-self: end;
+			}
+		}
+	}
+}
+
+.rent__card-title {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 34px;
+	margin: 0;
+	margin-bottom: 8px;
+}
+
+.rent__square {
+	opacity: 0.3;
+	margin: 0;
+	margin-bottom: 16px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #EAF2F6;
+}
+
+.rent__content {
+	padding: 16px 24px 24px 24px;
+}
+
+.rent__list {
+	@include reset-list;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+}
+
+.rent__item {
+	display: inline-grid;
+	align-self: start;
+	justify-self: center;
+	strong {
+		font-size: 32px;
+		line-height: 36px;
+		font-weight: 300;
+	}
+}

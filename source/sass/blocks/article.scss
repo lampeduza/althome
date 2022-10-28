@@ -4,7 +4,6 @@
 
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	align-items: start;
 
 	h2,
 	h3 {
@@ -56,12 +55,28 @@
 		height: 100%;
 		grid-template-columns: repeat(2, auto);
 		grid-template-rows: auto;
+		writing-mode: vertical-lr;
+    transform: rotate(180deg);
 		grid-column: 2 / 3;
+		grid-row: 2 / 5;
+		justify-content: end;
 		font-weight: 700;
 		font-size: 64px;
 		line-height: 64px;
 		color: #EAF2F6;
 		margin: 0;
+		user-select: none;
+	}
+
+	.article__place,
+	.article__number {
+		align-self: center;
+	}
+
+	.article__number {
+		margin-top: 40px;
+		align-self: center;
+		transform: rotate(90deg);
 	}
 
 	.article__text {
