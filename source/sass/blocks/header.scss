@@ -1,24 +1,26 @@
 .header {
 	grid-column: 1 / -1;
 	grid-row: 1 / 2;
-	background-color: #F2F8FB;
 }
 
 .header__wrapper {
 	padding: 10px 30px;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	align-items: center;
 	gap: 20px;
+
+	background-color: #F2F8FB;
 }
 
 .header__navigation {
 	grid-column: 1 / 6;
+	align-self: center;
 }
 
 .header__logo {
 	grid-column: 6 / 8;
 	justify-self: center;
+	align-self: center;
 }
 
 .header__form {
@@ -26,6 +28,7 @@
 	grid-template-columns: 100%;
 	grid-template-rows: 40px;
 	grid-column: 8 / 11;
+	align-self: center;
 }
 
 .header__field {
@@ -77,6 +80,7 @@
 	color: #333333;
 	margin: 0;
 	justify-self: end;
+	align-self: center;
 	user-select: none;
 }
 
