@@ -278,53 +278,77 @@
     </section>
 
     <section class="feedback">
+      <div class="feedback__wrapper container">
       <div class="feedback__content">
-        <h2><span>03</span> Оставить заявку</h2>
+        <h2>
+          <span class="feedback__line">03</span>
+          <span>Оставить заявку</span>
+        </h2>
+
         <h3>Мы свяжемся с вами</h3>
 
-        <form class="feedback__form" action="url" method="post">
-          <fieldset class="feedback__fieldset fields">
-            <legend class="visually-hidden">Заполните поля формы</legend>
+          <form class="feedback__form" action="url" method="post">
+            <fieldset class="feedback__fieldset fields">
+              <legend class="visually-hidden">Заполните поля формы</legend>
+  
+              <ul class="fields__list">
+                <li class="fields__item fields__item--reply">
+                  <label for="firstname-field">Обращение</label>
+                  <div class="fields__container">
+                    <span class="fields__value">Мистер</span>
+                    <span class="fields__icon">
+                      <svg width="10" height="6" focusable="false" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#arrow-down"></use>
+                      </svg>
+                    </span>
+                    <ul class="fields__data-list">
+                      <li class="fields__data-item" tabindex="0">Миссис</li>
+                      <li class="fields__data-item" tabindex="0">Мисс</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="fields__item fields__item--firstname">
+                  <label for="firstname-field">Имя</label>
+                  <input type="text" name="firstname-field" id="firstname-field" placeholder="Джон">
+                </li>
+                <li class="fields__item fields__item--secondname">
+                  <label for="secondname-field">Фамилия</label>
+                  <input type="text" name="secondname-field" id="secondname-field" placeholder="Смит">
+                </li>
+                <li class="fields__item fields__item--email">
+                  <label for="email-field">E-mail</label>
+                  <input type="text" name="email-field" id="email-field" placeholder="johnsmith@gmail.com">
+                </li>
+                <li class="fields__item fields__item--number">
+                  <label for="phone-number-field">Телефон</label>
+                  <input type="text" name="phone-number-field" id="phone-number-field" placeholder="+7 999 999-99-99">
+                </li>
+              </ul>
 
-            <ul class="fields__list">
-              <li class="fields__item">
-                
-              </li>
-              <li class="fields__item">
-                <label for="firstname-field">Имя</label>
-                <input type="text" name="firstname-field" id="firstname-field" placehodler="Джон">
-              </li>
-              <li class="fields__item">
-                <label for="secondname-field">Фамилия</label>
-                <input type="text" name="secondname-field" id="secondname-field" placehodler="Смит">
-              </li>
-              <li class="fields__item">
-                <label for="email-field">E-mail</label>
-                <input type="text" name="email-field" id="email-field" placehodler="johnsmith@gmail.com">
-              </li>
-              <li class="fields__item">
-                <label for="phone-number-field">Телефон</label>
-                <input type="text" name="phone-number-field" id="phone-number-field" placehodler="+7 999 999-99-99">
-              </li>
-            </ul>
+              <ul class="fields__additional">
+                <li class="fields__additional-item">
+                  <p class="fields__agreement">
+                    <input class="visually-hidden" type="checkbox" name="agreement-field" id="agreement-field">
+                    <label for="agreement-field" tabindex="0">Согласие на обработку персональных данных</label>
+                  </p>
+                </li>
+                <li class="fields__additional-item">
+                  <p class="fields__subscription">
+                    <input class="visually-hidden" type="checkbox" name="subscription-field" id="subscription-field" checked>
+                    <label for="subscription-field" tabindex="0">Подписка на рассылку</label>
+                  </p>
+                </li>
+              </ul>
+            </fieldset>
+  
+            <button class="fields__send button" type="submit">Отправить</button>
+          </form>
+        </div>
 
-            <p class="fields__agreement">
-              <label for="agreement-field">Согласие на обработку персональных данных</label>
-              <input class="visually-hidden" type="checkbox" name="agreement-field" id="agreement-field">
-            </p>
-            <p class="fields__subscription">
-              <label for="subscription-field">Подписка на рассылку</label>
-              <input class="visually-hidden" type="checkbox" name="subscription-field" id="subscription-field" checked>
-            </p>
-          </fieldset>
-
-          <button class="fields__send" type="submit">Отправить</button>
-        </form>
-      </div>
-
-      <picture class="feedback__picture">
-        <img class="feedback__image" src="" width="678" height="737" alt="Лодка в центре озера">
-      </picture>
+        <picture class="feedback__picture">
+          <img class="feedback__image" src="img/desktop/boat.jpg" width="678" height="737" alt="Лодка в центре озера">
+        </picture>
+    </div>
     </section>
   </main>
   <footer class="footer">

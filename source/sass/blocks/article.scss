@@ -53,13 +53,12 @@
 		display: grid;
 		width: 100%;
 		height: 100%;
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: 1fr auto;
 		grid-template-rows: auto;
 		writing-mode: vertical-lr;
     transform: rotate(180deg);
 		grid-column: 2 / 3;
 		grid-row: 2 / 5;
-		justify-content: end;
 		font-weight: 700;
 		font-size: 64px;
 		line-height: 64px;
@@ -71,6 +70,7 @@
 	.article__place,
 	.article__number {
 		align-self: center;
+		justify-self: end;
 	}
 
 	.article__number {
