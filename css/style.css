@@ -109,6 +109,11 @@ img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #FFB257;
 }
 
 .header {
@@ -212,6 +217,10 @@ img {
   fill: #06a9b3;
 }
 
+.header__search-icon:hover {
+  fill: #FFB257;
+}
+
 .header__variants {
   grid-column: 11 / -1;
   color: #333333;
@@ -259,6 +268,18 @@ img {
 .navigation__link {
   color: #06A9B3;
   text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: #FFB257;
+}
+
+.logo__icon {
+  fill: #FFB257;
+}
+
+.logo__icon:hover {
+  fill: #06A9B3;
 }
 
 .main {
@@ -433,6 +454,14 @@ img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.promo__button svg {
+  stroke: #06A9B3;
+}
+
+.promo__button:hover svg {
+  stroke: #FFB257;
 }
 
 .promo__counter {
@@ -695,6 +724,10 @@ img {
   margin-bottom: 32px;
 }
 
+.article__wrapper .article__offer:hover {
+  border-left: 2px solid #FFB257;
+}
+
 .article__wrapper .article__link {
   -ms-grid-column: 5;
   -ms-grid-column-span: 4;
@@ -796,6 +829,11 @@ img {
   -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
+  cursor: pointer;
+}
+
+.rent__card:hover .rent__square {
+  border-bottom: 2px solid #06a9b3;
 }
 
 .rent__card:first-child {
@@ -1217,6 +1255,7 @@ img {
   user-select: none;
   position: relative;
   min-height: 18px;
+  cursor: pointer;
 }
 
 .fields__agreement label::before,
@@ -1255,4 +1294,37 @@ img {
   grid-column: 1 / -1;
   grid-row: 3 / -1;
   background-color: #F2F8FB;
+}
+
+.footer__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  padding: 10px 30px;
+  gap: 24px;
+}
+
+.footer__logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  grid-row: 1 / -1;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.footer__logo .logo__icon {
+  fill: #06A9B3;
+}
+
+.footer__logo .logo__icon:hover {
+  fill: #FFB257;
+}
+
+.footer__navigation {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 5;
+  grid-column: 5 / 10;
+  grid-row: 1 / -1;
 }
