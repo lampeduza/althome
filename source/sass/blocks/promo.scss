@@ -131,6 +131,16 @@
 	margin: 0;
 	cursor: pointer;
 	user-select: none;
+
+	svg {
+		stroke: #06A9B3;
+	}
+
+	&:hover {
+		svg {
+			stroke: #FFB257;
+		}
+	}
 }
 
 .promo__counter {

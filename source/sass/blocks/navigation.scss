@@ -19,4 +19,8 @@
 .navigation__link {
 	color: #06A9B3;
 	text-decoration: none;
+
+	&:hover {
+		color: #FFB257;
+	}
 }

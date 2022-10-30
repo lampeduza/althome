@@ -287,7 +287,7 @@
 
         <h3>Мы свяжемся с вами</h3>
 
-          <form class="feedback__form" action="url" method="post">
+          <form class="feedback__form" action="url" method="get">
             <fieldset class="feedback__fieldset fields">
               <legend class="visually-hidden">Заполните поля формы</legend>
   
@@ -352,6 +352,7 @@
     </section>
   </main>
   <footer class="footer">
+    <div class="footer__wrapper container">
     <nav class="footer__navigation navigation">
       <ul class="navigation__list">
         <li class="navigation__item"><a class="navigation__link" href="#">Место</a></li>
@@ -360,11 +361,12 @@
       </ul>
     </nav>
 
-    <a class="logo" href="index.html">
+    <a class="footer__logo logo" href="index.html">
       <svg class="logo__icon" width="97" height="30" role="img" aria-label="Alt home logo">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
     </a>
+    </div>
   </footer>
     <script src="js/main.js"></script>
   </body>
