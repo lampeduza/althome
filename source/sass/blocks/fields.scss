@@ -7,13 +7,8 @@
 .fields__list {
 	@include reset-list;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	gap: 20px 24px;
-
-	grid-template-areas:
-		'reply firstname secondname'
-		'email email email'
-		'number number number';
 }
 
 .fields__item {
@@ -52,27 +47,13 @@
 		}
 	}
 
-	&--reply {
-		grid-area: reply;
+	&--small {
 		width: 132px;
+		grid-column: span 2;
 	}
 
-	&--firstname {
-		grid-area: firstname;
-		width: 132px;
-	}
-
-	&--secondname {
-		grid-area: secondname;
-		width: 132px;
-	}
-
-	&--email {
-		grid-area: email;
-	}
-
-	&--number {
-		grid-area: number;
+	&--big {
+		grid-column: 1 / - 1;
 	}
 }
 
@@ -195,4 +176,10 @@
 	font-weight: inherit;
 	border: none;
 	padding: 12px 32px;
+}
+
+.feedback__image {
+	width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

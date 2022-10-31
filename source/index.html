@@ -301,8 +301,8 @@
               <legend class="visually-hidden">Заполните поля формы</legend>
   
               <ul class="fields__list">
-                <li class="fields__item fields__item--reply">
-                  <label for="firstname-field">Обращение</label>
+                <li class="fields__item fields__item--small">
+                  <label>Обращение</label>
                   <div class="fields__container">
                     <span class="fields__value">Мистер</span>
                     <span class="fields__icon">
@@ -311,26 +311,27 @@
                       </svg>
                     </span>
                     <ul class="fields__data-list">
+                      <li class="fields__data-item fields__data-item--current" tabindex="0">Мистер</li>
                       <li class="fields__data-item" tabindex="0">Миссис</li>
                       <li class="fields__data-item" tabindex="0">Мисс</li>
                     </ul>
                   </div>
                 </li>
-                <li class="fields__item fields__item--firstname">
+                <li class="fields__item fields__item--small">
                   <label for="firstname-field">Имя</label>
-                  <input type="text" name="firstname-field" id="firstname-field" placeholder="Джон">
+                  <input type="text" name="firstname-field" id="firstname-field" placeholder="Джон" required>
                 </li>
-                <li class="fields__item fields__item--secondname">
+                <li class="fields__item fields__item--small">
                   <label for="secondname-field">Фамилия</label>
-                  <input type="text" name="secondname-field" id="secondname-field" placeholder="Смит">
+                  <input type="text" name="secondname-field" id="secondname-field" placeholder="Смит" required>
                 </li>
-                <li class="fields__item fields__item--email">
+                <li class="fields__item fields__item--big">
                   <label for="email-field">E-mail</label>
-                  <input type="text" name="email-field" id="email-field" placeholder="johnsmith@gmail.com">
+                  <input type="text" name="email-field" id="email-field" placeholder="johnsmith@gmail.com" required>
                 </li>
-                <li class="fields__item fields__item--number">
+                <li class="fields__item fields__item--big">
                   <label for="phone-number-field">Телефон</label>
-                  <input type="text" name="phone-number-field" id="phone-number-field" placeholder="+7 999 999-99-99">
+                  <input type="text" name="phone-number-field" id="phone-number-field" placeholder="+7 999 999-99-99" required>
                 </li>
               </ul>
 
