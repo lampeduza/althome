@@ -118,9 +118,13 @@
 .fields__additional {
 	@include reset-list;
 	display: grid;
-	grid-template-columns: repeat(2, auto);
+	grid-template-columns: repeat(6, 1fr);
 	gap: 24px;
 	margin-bottom: 40px;
+}
+
+.fields__additional-item {
+	grid-column: span 3;
 }
 
 .fields__agreement,

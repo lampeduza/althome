@@ -1182,10 +1182,15 @@ img {
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-  grid-template-columns: repeat(2, auto);
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
   gap: 24px;
   margin-bottom: 40px;
+}
+
+.fields__additional-item {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
 }
 
 .fields__agreement,
