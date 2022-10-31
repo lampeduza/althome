@@ -66,6 +66,7 @@
 }
 
 .rent__card {
+	grid-column: span 3;
 	color: #333333;
 	user-select: none;
 	background-color: #ffffff;
@@ -75,22 +76,6 @@
 		.rent__square {
 			border-bottom: 2px solid #06a9b3;
 		}
-	}
-
-	&:first-child {
-		grid-column: 1 / 4;
-	}
-
-	&:nth-child(2) {
-		grid-column: 4 / 7;
-	}
-
-	&:nth-child(3) {
-		grid-column: 7 / 10;
-	}
-
-	&:nth-child(4) {
-		grid-column: 10 / -1;
 	}
 
 	&--hit {
